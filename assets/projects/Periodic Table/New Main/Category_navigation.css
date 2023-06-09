@@ -1,0 +1,166 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main-container-element-category{
+    display: flex;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.group-labels{
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ============================================== */
+/* Metals Category */
+
+/* Sa may Label Part lang to ng first category natin */
+.metal-category-container{
+    border: 1px solid;
+    border-color: aliceblue;
+    box-shadow: 3px 3px 3px rgba(62, 42, 42, 0.201);
+
+
+    text-align: center;
+    width: 50%;
+    height: 47%;
+    margin: 35px;
+}
+
+/* Sa loob ng metal-category, giawa to para mag align yung mga contents sa loob */
+.metal-types {
+    border: 1px solid;
+    border-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+/* Kita ko lang sa google haha */
+.metal-types div{
+    flex-basis: calc(33.33% - 5px);
+    margin-bottom: 20px;
+    padding: 4px;
+}
+
+
+/* ============================================== */
+/* Nonmetals Category */
+
+.nonmetals-category-container{
+    border: 1px solid;
+    border-color: aliceblue;
+    box-shadow: 3px 3px 3px rgba(62, 42, 42, 0.201);
+
+    text-align: center;
+    width: 17%;
+    height: 10%;
+    margin: 20px;
+}
+
+.nonmetal-types {
+    border: 1px solid;
+    border-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 15px;
+}
+
+.nonmetal-types div{
+    margin: 10px;
+}
+
+/* ============================================== */
+/* Metalloids */
+
+.metalloids-category-container{
+    border: 1px solid;
+    border-color: aliceblue;
+    box-shadow: 3px 3px 3px rgba(62, 42, 42, 0.201);
+    border-radius: 2%;
+
+    text-align: center;
+    width: 15%;
+    height: 10%;
+    margin: 20px;
+}
+
+.metalloid-types{
+    border: 1px solid;
+    border-color: aliceblue;
+    padding: 30px;
+}
+
+
+
+/* ======================================= */
+/* Checkboxes */
+/* ======================================= */
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Metal Types */
+input[type="checkbox"][name="name-alkali-metals"]:checked{
+    accent-color: #BC19FF;
+}
+
+/* #hover-alakali-metals label:hover #checkbox-alkali-metals{
+    background-color:green;
+} */
+
+input[type="checkbox"][name="name-alkali-metals"]:hover{
+    accent-color: #BC19FF;
+}
+
+input[type="checkbox"][name="name-actinides"]:checked{
+    accent-color: #B1FF00;
+}
+
+input[type="checkbox"][name="name-transition-metals"]:checked{
+    accent-color: #FD0CA0;
+}
+
+input[type="checkbox"][name="name-alkaline-earth-metals"]:checked{
+    accent-color: #6211FD;
+}
+
+input[type="checkbox"][name="name-lanthanide"]:checked{
+    accent-color: #00FF37;
+}
+
+input[type="checkbox"][name="name-post-transition-metals"]:checked{
+    accent-color: #00FFD0;
+}
+
+
+/* Nonemtals */
+input[type="checkbox"][name="name-noble-gases"]:checked{
+    accent-color: #F93B2B;
+}
+
+input[type="checkbox"][name="name-reactive-nonmetals"]:checked{
+    accent-color: #ffb855;
+}
+
+/* Metalloids */
+input[type="checkbox"][name="name-metalloids"]:checked{
+    accent-color: #1300CE;
+}
+
+
+
+

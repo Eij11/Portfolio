@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Periodic Table of Elements</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/chemistry-icon.png">
+
+    <link rel="stylesheet" href="Periodic_Table.css">
+    <link rel="stylesheet" href="Category_navigation.css">
+    <link rel="stylesheet" href="Color.css">
+</head>
+
+<body>
+    <script src="Category_elem_functions.js"></script>
+
+    <h1 class="main-title"><a href="" class="main-title-link">PERIODIC TABLE OF ELEMENTS</a></h1>
+
+    <div class="main-container-element-category">
+        <!-- Above Navigation, una kay METALS -->
+        <div class="metal-category-container">
+            <label for="" class="group-labels"><b>Metals</b></label>
+
+            <div class="metal-types">
+
+                <div id="hover-alakali-metals">
+                    <input type="checkbox" name="name-alkali-metals" id="checkbox-alkali-metals" onclick="Select_Alkali_Metals()">
+                        <label for="name-alkali-metals" > Alkali Metals</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="name-actinides" id="checkbox-actinides" onclick="Select_Actinides()">
+                        <label for="">Actinide</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="name-transition-metals" id="checkbox-transition-metals" onclick="Select_Transition_Metals()">
+                        <label for="">Transition Metals</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="name-alkaline-earth-metals" id="checkbox-alkaline-earth-metals" onclick="Select_Alkaline_Earth_Metals()">
+                        <label for="">Alkaline Earth Metals</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="name-lanthanide" id="checkbox-lanthanide" onclick="Select_Lanthanide()">
+                        <label for="">Lanthanide </label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="name-post-transition-metals" id="checkbox-post-transition-metals" onclick="Select_Post_Transition_Metals()">
+                        <label for="">Post-transition Metals</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="nonmetals-category-container">
+            <label for="" class="group-labels"><b>Nonmetals</b></label>
+            <div class="nonmetal-types">
+                <div>
+                    <input type="checkbox" name="name-noble-gases" id="checkbox-noble-gases" onclick="Select_Noble_Gases()">
+                    <label for="">Noble Gases</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="name-reactive-nonmetals" id="checkbox-reactive-nonmetals" onclick="Select_Reactive_Nonmetals()"> 
+                    <label for="">Reactive Nonmetals</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="metalloids-category-container">
+            <label for="" class="group-labels"><b>Metalloids</b></label>
+
+            <div class="metalloid-types">
+                <div>
+                    <input type="checkbox" name="name-metalloids" id="checkbox-metalloids" onclick="Select_Metalloids()">
+                    <label for="">Metalloids</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <table cellspacing = 6 class="table_1">
+
+        <tr class="container-col-number-identifiers">
+            <td class="col-number-identifiers"></td>
+            <td class="col-number-identifiers">1</td>
+            <td class="col-number-identifiers">2</td>
+            <td class="col-number-identifiers">3</td>
+            <td class="col-number-identifiers">4</td>
+            <td class="col-number-identifiers">5</td>
+            <td class="col-number-identifiers">6</td>
+            <td class="col-number-identifiers">7</td>
+            <td class="col-number-identifiers">8</td>
+            <td class="col-number-identifiers">9</td>
+            <td class="col-number-identifiers">10</td>
+            <td class="col-number-identifiers">11</td>
+            <td class="col-number-identifiers">12</td>
+            <td class="col-number-identifiers">13</td>
+            <td class="col-number-identifiers">14</td>
+            <td class="col-number-identifiers">15</td>
+            <td class="col-number-identifiers">16</td>
+            <td class="col-number-identifiers">17</td>
+            <td class="col-number-identifiers">18</td>
+        </tr>
+
+        <!-- First Row -->
+        <tr class="table-1-tr"> 
+            <td class="number-identifiers">1</td>
+
+            <td class="nonmetals">1 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Hydrogen.html" target="_blank"> H </a> <br><small>Hydrogen</small> <br> <small>1.0079</small></td>
+
+            <td colspan = 16></td>
+
+            <td class="noble_gas">2 <br> <a href="/assets/projects/Periodic Table/Elements/Noble Gases/Helium.html"> He</a> <br> <small>Helium</small> <br> <small>4.0026</small></td>
+        </tr>
+
+        <!-- Second Row -->
+        <tr class="table-1-tr"r>
+            <td class="number-identifiers">2</td>
+
+            <td class="alkali_metals">3 <br> <a href="/assets/projects/Periodic Table/Elements/Alkali Metals/Lithium.html"> Li</a> <br><small>Lithium</small> <br> <small>6.941</small></td>
+
+            <td class="alkaline_earth">4 <br> <a href="/assets/projects/Periodic Table/Elements/Alkaline Earth Metals/Beryllium.html">Be</a> <br><small>Beryllium</small> <br> <small>9.0122</small></td>
+
+            <td colspan = 10></td>
+
+            <td class="metalloids">5 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Boron.html">B</a> <br><small>Boron</small> <br> <small>10.811</small></td>
+
+            <td class="nonmetals">6 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Carbon.html">C</a> <br><small>Carbon</small> <br> <small>12.0107</small></td>
+
+            <td class="nonmetals">7 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Nitrogen.html">N</a> <br><small>Nitrogen</small> <br> <small>14.0067</small></td>
+
+            <td class="nonmetals">8 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Oxygen.html">O</a> <br><small>Oxygen</small> <br> <small>15.9994</small></td>
+
+            <td class="nonmetals">9 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Flourine.html">F</a> <br><small>Flourine</small> <br> <small>18.9984</small></td>
+
+            <td class="noble_gas">10 <br> <a href="/assets/projects/Periodic Table/Elements/Noble Gases/Neon.html">Ne</a> <br><small>Neon</small> <br> <small>20.1797</small></td>
+        </tr>
+
+        <!-- Third Row -->
+        <tr class="table-1-tr">
+            <td class="number-identifiers">3</td>
+
+            <td class="alkali_metals">11 <br> <a href="/assets/projects/Periodic Table/Elements/Alkali Metals/Sodium.html">Na</a> <br><small>Sodium</small> <br> <small>22.9897</small></td>
+
+            <td class="alkaline_earth">12 <br> <a href="/assets/projects/Periodic Table/Elements/Alkaline Earth Metals/Magnesium.html">Mg</a> <br><small>Magnesium</small> <br> <small>24.305</small></td>
+
+            <td colspan = 10></td>
+
+            <td class="post_trans_metals">13 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Aluminium.html">Al</a> <br><small>Aluminium</small> <br> <small>26.9815</small></td>
+
+            <td class="metalloids">14 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Silicon.html">Si</a> <br><small>Silicon</small> <br> <small>28.0855</small></td>
+
+            <td class="nonmetals">15 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Phosphorus.html">P</a> <br><small>Phosphorus</small> <br> <small>30.9738</small></td>
+
+            <td class="nonmetals">16 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Sulfur.html">S</a> <br><small>Sulfur</small> <br> <small>32.065</small></td>
+
+            <td class="nonmetals">17 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Chlorine.html">Cl</a> <br><small>Chlorine</small> <br> <small>35.453</small></td>
+
+            <td class="noble_gas">18 <br> <a href="/assets/projects/Periodic Table/Elements/Noble Gases/Argon.html">Ar</a> <br><small>Argon</small> <br> <small>39.948</small></td>
+        </tr>
+
+        <!-- Fourth Row -->
+        <tr class="table-1-tr">
+            <td class="number-identifiers">4</td>
+
+            <td class="alkali_metals">19 <br> <a href="/assets/projects/Periodic Table/Elements/Alkali Metals/Potassium.html">K</a> <br><small>Potassium</small> <br> <small>39.0983</small></td>
+
+            <td class="alkaline_earth">20 <br> <a href="/assets/projects/Periodic Table/Elements/Alkaline Earth Metals/Calcium.html">Ca</a> <br><small>Calcium</small> <br> <small>40.08</small></td>
+
+            <td class="transition_metals">21 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Sacandium.html">Sc</a> <br><small>Scandium</small> <br> <small>44.9559</small></td>
+
+            <td class="transition_metals">22 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Titanium.html">Ti</a> <br><small>Titanium</small> <br> <small>47.90</small></td>
+
+            <td class="transition_metals">23 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Vanadium.html">V</a> <br><small>Vanadium</small> <br> <small>50.9415</small></td>
+
+            <td class="transition_metals">24 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Chromium.html">Cr</a> <br><small>Chromium</small> <br> <small>51.996</small></td>
+
+
+            <td class="transition_metals">25 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Manganese.html">Mn</a> <br><small>Manganese</small> <br> <small>54.9380</small></td>
+
+            <td class="transition_metals">26 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Iron.html">Fe</a> <br><small>Iron</small> <br> <small>55.847</small></td>
+
+            <td class="transition_metals">27 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Cobalt.html">Co</a> <br><small>Cobalt</small> <br> <small>58.9332</small></td>
+
+            <td class="transition_metals">28 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Nickel.html">Ni</a> <br><small>Nickel</small> <br> <small>58.70</small></td>
+
+            <td class="transition_metals">29 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Copper.html">Cu</a> <br><small>Copper</small> <br> <small>63.546</small></td>
+
+            <td class="transition_metals">30 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Zinc.html">Zn</a> <br><small>Zinc</small> <br> <small>65.38</small></td>
+
+            <td class="post_trans_metals">31 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Gallium.html">Ga</a> <br><small>Gallium</small> <br> <small>69.72</small></td>
+            
+            <td class="metalloids">32 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Germanium.html">Ge</a> <br><small>Germanium</small> <br> <small>72.59</small></td>
+
+            <td class="metalloids">33 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Arsenic.html">As</a> <br><small>Arsenic</small> <br> <small>74.9216</small></td>
+
+            <td class="nonmetals">34 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Selenium.html">Se</a> <br><small>Selenium</small> <br> <small>78.96</small></td>
+
+            <td class="nonmetals">35 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Bromine.html">Br</a> <br><small>Bromine</small> <br> <small>79.904
+            </small></td>
+
+            <td class="noble_gas">36 <br> <a href="/assets/projects/Periodic Table/Elements/Noble Gases/Krypton.html">Kr</a> <br><small>Krypton</small> <br> <small>83.80</small></td>
+        </tr>
+
+        <!-- 5th Row -->
+        <tr class="table-1-tr">
+            <td class="number-identifiers">5</td>
+
+            <td class="alkali_metals">37 <br> <a href="/assets/projects/Periodic Table/Elements/Alkali Metals/Rubidium.html">Rb</a> <br><small>Rubidium</small> <br> <small>85.4678</small></td>
+
+            <td class="alkaline_earth">38 <br> <a href="/assets/projects/Periodic Table/Elements/Alkaline Earth Metals/Strontium.html">Sr</a> <br><small>Strontium</small> <br> <small>87.62</small></td>            
+
+            <td class="transition_metals">39 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Yttrium.html">Y</a> <br><small>Yttrium</small> <br> <small>88.9059</small></td>
+
+            <td class="transition_metals">40 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Zirconium.html">Zr</a> <br><small>Zirconium</small> <br> <small>91.22</small></td>
+
+            <td class="transition_metals">41 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Niobium.html">Nb</a> <br><small>Niobium</small> <br> <small>92.9064</small></td>
+
+            <td class="transition_metals">42 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Molybdenum.html">Mo</a> <br><small>Molybdenum</small> <br> <small>95.94</small></td>
+
+            <td class="transition_metals">43 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Technetium.html">Tc</a> <br><small>Technetium</small> <br> <small>98</small></td>
+
+            <td class="transition_metals">44 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Ruthenium.html">Ru</a> <br><small>Ruthenium</small> <br> <small>101.07</small></td>
+
+            <td class="transition_metals">45 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Rhodium.html">Rh</a> <br><small>Rhodium</small> <br> <small>102.9055</small></td>
+
+            <td class="transition_metals">46 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Palladium.html">Pd</a> <br><small>Palladium</small> <br> <small>106.4</small></td>
+
+            <td class="transition_metals">47 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Silver.html">Ag</a> <br><small>Silver</small> <br> <small>107.868</small></td>
+
+            <td class="transition_metals">48 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Cadmium.html">Cd</a> <br><small>Cadmium</small> <br> <small>112.41</small></td>
+
+            <td class="post_trans_metals">49 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Indium.html">In</a> <br><small>Indium</small> <br> <small>114.82</small></td>
+
+            <td class="post_trans_metals">50 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Tin.html">Sn</a> <br><small>Tin</small> <br> <small>118.69</small></td>
+
+            <td class="metalloids">51 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Antimony.html">Sb</a> <br><small>Antimony</small> <br> <small>121.75</small></td>
+
+            <td class="metalloids">52 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Tellurium.html">Te</a> <br><small>Tellurium</small> <br> <small>127.60</small></td>
+
+            <td class="nonmetals">53 <br> <a href="/assets/projects/Periodic Table/Elements/Nonmetals/Iodine.html">I</a> <br><small>Iodine</small> <br> <small>126.9045</small></td>
+
+            <td class="noble_gas">54 <br> <a href="/assets/projects/Periodic Table/Elements/Noble Gases/Xenon.html">Xe</a> <br><small>Xenon</small> <br> <small>131.30</small></td>
+        </tr>
+
+        <!-- 6th Row -->
+        <tr class="table-1-tr">
+            <td class="number-identifiers">6</td>
+
+            <td class="alkali_metals">55 <br> <a href="/assets/projects/Periodic Table/Elements/Alkali Metals/Cesium.html">Cs</a> <br><small>Cesium</small> <br> <small>132.9054</small></td>
+
+            <td class="alkaline_earth">56 <br> <a href="/assets/projects/Periodic Table/Elements/Alkaline Earth Metals/Barium.html">Ba</a> <br><small>Barium</small> <br> <small>137.33</small></td>
+
+            <td class="number-identifiers"><small>57-71</small></td>
+
+            <td class="transition_metals">72 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Hafnium.html">Hf</a> <br><small>Hafnium</small> <br> <small>178.49</small></td>
+
+            <td class="transition_metals">73 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Tantalum.html">Ta</a> <br><small>Tantalum</small> <br> <small>180.9479</small></td>
+
+            <td class="transition_metals">74 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Tungsten.html">W</a> <br><small>Tungsten</small> <br> <small>183.85</small></td>
+
+            <td class="transition_metals">75 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Rhenium.html">Re</a> <br><small>Rhenium</small> <br> <small>186.207</small></td>
+
+            <td class="transition_metals">76 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Osmium.html">Os</a> <br><small>Osmium</small> <br> <small>190.2</small></td>
+
+            <td class="transition_metals">77 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Iridium.html">Ir</a> <br><small>Iridium</small> <br> <small>192.22</small></td>
+
+            <td class="transition_metals">78 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Platinum.html">Pt</a> <br><small>Platinum</small> <br> <small>195.09</small></td>
+
+            <td class="transition_metals">79 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Gold.html">Au</a> <br><small>Gold</small> <br> <small>196.9665</small></td>
+
+            <td class="transition_metals">80 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Mercury.html">Hg</a> <br><small>Mercury</small> <br> <small>200.59</small></td>
+
+            <td class="post_trans_metals">81 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Thallium.html">Tl</a> <br><small>Thallium</small> <br> <small>204.37</small></td>
+
+            <td class="post_trans_metals">82 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Lead.html">Pb</a> <br><small>Lead</small> <br> <small>207.2</small></td>
+
+            <td class="post_trans_metals">83 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Bismuth.html">Bi</a> <br><small>Bismuth</small> <br> <small>208.9804</small></td>
+
+            <td class="post_trans_metals">84 <br> <a href="/assets/projects/Periodic Table/Elements/Post-transition Metals/Polonium.html">Po</a> <br><small>Polonium</small> <br> <small>209</small></td>
+
+            <td class="metalloids">85 <br> <a href="/assets/projects/Periodic Table/Elements/Metalloids/Astatine.html">At</a> <br><small>Astatine</small> <br> <small>210</small></td>
+
+            <td class="noble_gas">86 <br> <a href="/assets/projects/Periodic Table/Elements/Noble Gases/Radon.html">Rn</a> <br><small>Radon</small> <br> <small>222</small></td>
+        </tr>
+
+        <!-- 7th Row -->
+        <tr class="table-1-tr">
+            <td class="number-identifiers">7</td>
+
+            <td class="alkali_metals">87 <br> <a href="/assets/projects/Periodic Table/Elements/Alkali Metals/Francium.html">Fr</a> <br><small>Francium</small> <br> <small>223</small></td>
+
+            <td class="alkaline_earth">88 <br> <a href="/assets/projects/Periodic Table/Elements/Alkaline Earth Metals/Radium.html">Ra</a> <br><small>Radium</small> <br> <small>226.0254</small></td>
+
+            <td class="number-identifiers"><small>89-103</small></td>
+
+            <td class="transition_metals">104 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Rutherfordium.html">Rf</a> <br><small>Rutherfordium</small> <br> <small>261</small></td>
+
+            <td class="transition_metals">105 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Dubnium.html">Db</a> <br><small>Dubnium</small> <br> <small>262</small></td>
+
+            <td class="transition_metals">106 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Seaborgium.html">Sg</a> <br><small>Seaborgium</small> <br> <small>266</small></td>
+
+            <td class="transition_metals">107 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Bohrium.html">Bh</a> <br><small>Bohrium</small> <br> <small>264</small></td>
+
+            <td class="transition_metals">108 <br> <a href="/assets/projects/Periodic Table/Elements/Transition Metals/Hassium.html">Hs</a> <br><small>Hassium</small> <br> <small>277</small></td>
+
+            <td class="unknown">109 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Meitnerium.html">Mt</a> <br><small>Meitnerium</small> <br> <small>268</small></td>
+
+            <td class="unknown">110 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Darmstadtium.html">Ds</a> <br><small>Darmstadtium</small> <br> <small>261.9</small></td>
+
+            <td class="unknown">111 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Roentgenium.html">Rg</a> <br><small>Roentgenium</small> <br> <small>271.8</small></td>
+
+            <td class="unknown">112 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Copernicium.html">Cn</a> <br><small>Copernicium</small> <br> <small>285</small></td>
+
+            <td class="unknown">113 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Nihonium.html">Nh</a> <br><small>Nihonium</small> <br> <small>286</small></td>
+
+            <td class="unknown">114 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Flerovium.html">Fl</a> <br><small>Flerovium</small> <br> <small>289</small></td>
+
+            <td class="unknown">115 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Moscovium.html">Mc</a> <br><small>Moscovium</small> <br> <small>288</small></td>
+
+            <td class="unknown">116 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Livermorium.html">Lv</a> <br><small>Livermorium</small> <br> <small>293</small></td>
+
+            <td class="unknown">117 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Tennessine.html">Ts</a> <br><small>Tennessine</small> <br> <small>260.9</small></td>
+
+            <td class="unknown">118 <br> <a href="/assets/projects/Periodic Table/Elements/Unknowns/Oganesson.html">Og</a> <br><small>Oganesson</small> <br> <small>294</small></td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <table class="table_2" cellspacing = 7>
+        <!-- Lanthanides -->
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+        <tr class="table-2-tr">
+            <td class="number-identifiers">6</td>
+
+            <td class="lanthanides">57 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Lanthanum.html">La</a> <br><small>Lanthanum</small> <br> <small>138.9055</small></td>
+
+            <td class="lanthanides">58 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Cerium.html">Ce</a> <br><small>Cerium</small> <br> <small>140.116</small></td>
+
+            <td class="lanthanides">59 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Praseodymium.html">Pr</a> <br><small>Praseodymium</small> <br> <small>atomic</small></td>
+
+            <td class="lanthanides">60 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Neodymium.html">Nd</a> <br><small>Neodymium</small> <br> <small>144.24</small></td>
+
+            <td class="lanthanides">61 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Promethium.html">Pm</a> <br><small>Promethium</small> <br> <small>145</small></td>
+
+            <td class="lanthanides">62 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Samarium.html">Sm</a> <br><small>Samarium</small> <br> <small>150.36</small></td>
+
+            <td class="lanthanides">63 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Europium.html">Eu</a> <br><small>Europium</small> <br> <small>151.964</small></td>
+
+            <td class="lanthanides">64 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Gadolinium.html">Gd</a> <br><small>Gadolinium</small> <br> <small>157.25</small></td>
+
+            <td class="lanthanides">65 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Terbium.html">Tb</a> <br><small>Terbium</small> <br> <small>158.9253
+            </small></td>
+
+            <td class="lanthanides">66 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Dysprosium.html">Dy</a> <br><small>Dysprosium</small> <br> <small>162.5</small></td>
+
+            <td class="lanthanides">67 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Holmium.html">Ho</a> <br><small>Holmium</small> <br> <small>164.9303</small></td>
+
+            <td class="lanthanides">68 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Erbium.html">Er</a> <br><small>Erbium</small> <br> <small>167.259</small></td>
+
+            <td class="lanthanides">69 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Thulium.html">Tm</a> <br><small>Thulium</small> <br> <small>168.9342</small></td>
+
+            <td class="lanthanides">70 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Ytterbium.html">Yb</a> <br><small>Ytterbium</small> <br> <small>173.04</small></td>
+
+            <td class="lanthanides">71 <br> <a href="/assets/projects/Periodic Table/Elements/Lanthanide/Lutetium.html">Lu</a> <br><small>Lutetium</small> <br> <small>174.967</small></td>
+         </tr>
+
+        <!-- Actinides -->
+
+        <tr class="table-2-tr">
+            <td class="number-identifiers">7</td>
+
+            <td class="actinides">89 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Actinium.html">Ac</a> <br><small>Actinium</small> <br> <small>227</small></td>
+
+            <td class="actinides">90 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Thorium.html">Th</a> <br><small>Thorium</small> <br> <small>232.0381</small></td>
+
+            <td class="actinides">91 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Protactinium.html">Pa</a> <br><small>Protactinium</small> <br> <small>231.0359</small></td>
+            
+            <td class="actinides">92 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Uranium.html">U</a> <br><small>Uranium</small> <br> <small>238.0289</small></td>
+
+            <td class="actinides">93 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Neptunium.html">Np</a> <br><small>Neptunium</small> <br> <small>237</small></td>
+
+            <td class="actinides">94 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Plutonium.html">Pu</a> <br><small>Plutonium</small> <br> <small>244</small></td>
+
+            <td class="actinides">95 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Americium.html">Am</a> <br><small>Americium</small> <br> <small>243</small></td>
+
+            <td class="actinides">96 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Curium.html">Cm</a> <br><small>Curium</small> <br> <small>247</small></td>
+
+            <td class="actinides">97 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Berkelium.html">Bk</a> <br><small>Berkelium</small> <br> <small>247</small></td>
+
+            <td class="actinides">98 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Californium.html">Cf</a> <br><small>Californium</small> <br> <small>251</small></td>
+
+            <td class="actinides">99 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Einsteinium.html">Es</a> <br><small>Einsteinium</small> <br> <small>252</small></td>
+            
+            <td class="actinides">100 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Fermium.html">Fm</a> <br><small>Fermium</small> <br> <small>257</small></td>
+
+            <td class="actinides">101 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Mendelevium.html">Md</a> <br><small>Mendelevium</small> <br> <small>258</small></td>
+
+            <td class="actinides">102 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Nobelium.html">No</a> <br><small>Nobelium</small> <br> <small>259</small></td>
+
+            <td class="actinides">103 <br> <a href="/assets/projects/Periodic Table/Elements/Actinide/Lawrencium.html">Lr</a> <br><small>Lawrencium</small> <br> <small>262</small></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

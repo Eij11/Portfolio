@@ -1,0 +1,52 @@
+/* Colors */
+.nonmetals {
+    border: solid 2px #ffb855;
+    /* background-image: linear-gradient(#fffc00, #f9972f);  */
+}
+
+
+.noble_gas {
+    border: solid 2px #F93B2B;
+    /* background-image: linear-gradient(#f68367, #ff0c00); */
+
+}
+
+.alkali_metals {
+    border: solid 2px #BC19FF;
+    /* background-image: linear-gradient(#d500ff, #722ff9); */
+}
+
+.alkaline_earth{
+    border: solid 2px #6211FD;
+    /* background-image: linear-gradient(#7b22f8, #2339da) */
+}
+
+.transition_metals {
+    border: solid 2px #FD0CA0;
+    /* background: linear-gradient(0deg, rgba(230,37,246,1) 35%, rgba(255,10,171,1) 100%); */
+}
+
+.unknown {
+    border: solid 2px #939393;
+    /* background: linear-gradient(0deg, rgba(10,155,255,1) 35%, rgba(37,246,233,1) 100%); */
+}
+
+.metalloids {
+    border: solid 2px #1300CE;
+    /* background: linear-gradient(0deg, rgba(82,37,246,1) 35%, rgba(70,166,255,1) 100%); */
+}
+
+.post_trans_metals {
+    border: solid 2px #00FFD0;
+    /* background: linear-gradient(0deg, rgba(37,246,177,1) 35%, rgba(70,245,255,1) 100%); */
+}
+
+.lanthanides {
+    border: solid 2px #00FF37;
+    /* background: linear-gradient(0deg, rgba(0,251,33,1) 35%, rgba(61,231,143,1) 100%); */
+}
+
+.actinides {
+    border: solid 2px #B1FF00;
+    /* background: linear-gradient(0deg, rgba(212,251,0,1) 35%, rgba(80,195,33,1) 100%); */
+}
